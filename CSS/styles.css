@@ -1,0 +1,39 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: beige;
+  }
+  
+  li {
+    float: left;
+  }
+  li .pages {
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: crimson;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+li img{
+    width: 25px;
+}
+ul .pages {
+    height: 35px;
+}
+span {
+    color: teal;
+    font-size: xxx-large;
+    text-align: left;
+    padding-right: 250px;
+    padding-left: 10px;
+}
