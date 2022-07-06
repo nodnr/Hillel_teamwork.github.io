@@ -147,6 +147,7 @@ div .table-conteiner2 {
 }
 
   
+<<<<<<< Updated upstream
 .section2-bottom1 img{
   height: 100px;
   margin-top: 20px;}
@@ -251,6 +252,13 @@ div .table-conteiner2 {
 .section5-top p {
   text-shadow: 5px 4px 1px;
   color: dimgrey;
+=======
+  li a:hover {
+    background-color: white;
+  }
+li img{
+    width: 25px;
+>>>>>>> Stashed changes
 }
 .company {
   display: flex;
