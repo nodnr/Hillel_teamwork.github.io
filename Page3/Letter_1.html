@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .introduction {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 400px 400px;
+            background-image: url(images/skyscraper_1.jpg);
+            background-size: 100% 100%;
+        }
+
+        #Logistic_company {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            color: aliceblue;
+            font-size: 5rem;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            margin-top: auto;
+        }
+
+        .common_table {
+            display: flex;
+            justify-content: right;
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+
+        .common_table .inlist_1,
+        .inlist_2 {
+            flex: 1;
+            min-width: 400px;
+            color: aliceblue;
+            line-height: 32px;
+            font-size: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .common_table p {
+            font-weight: bold;
+        }
+
+        .inlist_1 {
+            background-color: aqua;
+        }
+
+        .inlist_2 {
+            background-color: black;
+        }
+
+        .twenty {
+            margin: 50px 0px;
+        }
+
+        .container {
+            display: flex;
+            text-align: center;
+        }
+
+        .container div {
+            flex: 1;
+            margin: 0px 30px 30px 30px;
+        }
+
+        .container div img {
+            width: 100px;
+            background-color: aqua;
+            border-radius: 100%;
+        }
+
+        .rove_sec {
+            max-width: 1200px;
+            margin-left: 30px;
+        }
+
+        .third {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 800px;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+        .box_1 {
+            margin-left: 50px;
+        }
+
+        #What {
+            font-size: 4rem;
+            font-weight: bold;
+            color: aliceblue;
+
+        }
+
+        .box_1 div ol {
+            color: aliceblue;
+            list-style-type: none;
+            line-height: 2;
+            font-size: 2rem;
+            font-weight: bold;
+            padding-left: 0%;
+        }
+
+        .box_1 div {
+            margin-left: 40px;
+        }
+
+        #button {
+            color: aliceblue;
+            background-color: black;
+            width: 150px;
+            height: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .box_2 {
+            min-width: 400px;
+            min-height: 440px;
+            margin: auto 100px 0px 100px;
+        }
+
+        .box_2 p {
+            line-height: 24px;
+        }
+
+        .box_2 img {
+            border-radius: 100%;
+            width: 183px;
+            height: 183px;
+        }
+
+        #beforelist {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-left: 60px;
+            margin-bottom: 0;
+        }
+
+        .list {
+            list-style-position: outside;
+            column-count: 2;
+        }
+
+        .list li {
+            color: grey;
+            font-size: 20px;
+            line-height: 28px;
+            padding: 30px 0px;
+            margin: 0px 70px;
+
+        }
+
+        .list li::marker {
+            color: green;
+            font-size: 40px;
+        }
+
+        .End_letter_1 {
+            background-color: black;
+            color: aliceblue;
+            font-size: 20px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        .End_doc1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;  
+        }
+
+        .End_doc1 div {
+            margin: 0px 40px;
+        }
+
+        .butone_more {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            background-color: aqua;
+            width: 125px;
+            height: 40px;
+            color: aliceblue;
+        }
+
+        .left {
+            margin-left: 40px; margin-top: 50px;
+        }      
+        
+        #font_3 {
+            font-size: 3rem; font-weight: bold;
+        }
+
+        .greyfont {
+            line-height: 24px; color: grey;
+        }
+
+        .fonyrem {
+            font-size: 1.5rem; font-weight: bold; 
+        }
+
+        .filterimage {
+        filter:invert(100%);
+        }
+
+        #Featured_clients {
+            font-size: 4rem;
+        } 
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+
+
+    </style>
+
+    <section>
+        <div class="introduction">
+            <h1 id="Logistic_company">Logistics company</h1>
+
+            <div class="common_table">
+                <div class="inlist_1">
+                    <p>Use company</p>
+                    <ul>
+                        <li>Ut maxime magni eos voluptas debitis</li>
+                        <li>Et cupiditate natus qui quod ipsum</li>
+                        <li>At quibusdam labore ea nobis numquam</li>
+                        <li>Et iure iusto sit illum enim aut blanditiis</li>
+                    </ul>
+                </div>
+
+                <div class="inlist_2">
+                    <p>Our company</p>
+                    <ul>
+                        <li>Aut dolore aliquid eos iste doloribus</li>
+                        <li>Aut excepturi inventore nam veritatis officiis</li>
+                        <li>Et odit blanditiis eum doloremque minima</li>
+                        <li>Et consectetur sunt sit neque itaque a nostrum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="twenty">
+        <div class="rove_sec">
+            <span id="font_3">We Are Increasing Business <br> Success With IT
+                Solution</span>
+            <p class="greyfont">Et voluptatem dolorem in voluptatum consequatur aut quos
+                laudantium sit odio fuga non odio saepe a
+                consequatur quia. Ut distinctio recusandae qui sapiente sunt sit natus magni sit dignissimos adipisci
+                qui iste recusandae qui sint internos et itaque reiciendis. Qui blanditiis eaque sit nesciunt voluptatum
+                ut commodi soluta ad laborum voluptas qui incidunt error non voluptatem nobis non reprehenderit nobis.
+                Rem cumque odit ut facere obcaecati est sequi nulla. In impedit quia cum sapiente similique et voluptas
+                rerum qui vitae magni qui nostrum nihil eos earum ipsam.</p>
+        </div>
+
+        <div class="container">
+            <div>
+                <img src="images/icons/phonebook.svg" alt="">
+                <p class="fonyrem">Visualize it</p>
+                <p class="greyfont">Ut harum minima At nobis debitis aut dolorem eveniet ut saepe
+                    neque in expedita voluptatem a
+                    doloribus unde! Eum deleniti consequuntur ut similique voluptatum id quia quasi aut labore minima
+                    eos aliquid quia.
+                </p>
+            </div>
+
+            <div>
+                <img src="images/icons/star.svg" alt="">
+                <p class="fonyrem">Creat it</p>
+                <p class="greyfont">Eos odio facilis et exercitationem eaque quo sapiente dolores
+                    ut dolore ipsum est facere suscipit?
+                    Est nihil voluptatem qui harum dolores sit voluptatem voluptas et eligendi inventore et omnis
+                    magnam.
+                </p>
+            </div>
+
+            <div>
+                <img src="images/icons/presentation.svg" alt="">
+                <p class="fonyrem">Grow it</p>
+                <p class="greyfont">Et culpa vero ut voluptatem molestias sed dolores voluptatem
+                    qui nulla beatae. Et voluptates totam et
+                    incidunt dicta et possimus inventore ab officiis officia hic odit reprehenderit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="third">
+        <div class="box_1">
+            <p id="What">What We Do</p>
+            <div>
+                <ol>
+                    <li>Premium Desig</li>
+                    <li>Amazing Photo</li>
+                    <li>Creative Ideas</li>
+                    <li>Unique Strategy</li>
+                    <li>Creative Branding</li>
+                </ol>
+                <a href="#Featured_clients">
+                <p id="button">LEARN MORE</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="box_2">
+            <img src="images/teach.jpg">
+            <p>Qui ipsum repellat qui facilis distinctio aut internos fugit quo doloribus eveniet. In odit ipsum qui
+                dolores dolor sed harum sunt aut esse illo ut harum numquam aut voluptatibus fuga qui assumenda placeat.
+                Qui quia facere est minus voluptatem vel asperiores quaerat sed veritatis possimus est perspiciatis
+                aliquid et culpa illum qui dolorem cumque.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <p id="beforelist">IT Solution Strategy <br> Development For Your Business</p>
+            <ul class="list">
+                <li>Rem illo libero non vitae veritatis cum quasi quia vel animi placeat ex maxime dolorem. Non natus
+                    beatae
+                    cum nobis officiis et magni reprehenderit. Ut quidem autem hic deleniti internos ut nisi omnis! Eum
+                    rerum voluptatum quo ratione voluptatibus quo dolore quae ea nihil tenetur sed deleniti repudiandae
+                    ut
+                    voluptatem porro.</li>
+                <li>Rem illo libero non vitae veritatis cum quasi quia vel animi placeat ex maxime dolorem. Non natus
+                    beatae
+                    cum nobis officiis et magni reprehenderit. Ut quidem autem hic deleniti internos ut nisi omnis! Eum
+                    rerum voluptatum quo ratione voluptatibus quo dolore quae ea nihil tenetur sed deleniti repudiandae
+                    ut
+                    voluptatem porro.</li>
+                <li>Rem illo libero non vitae veritatis cum quasi quia vel animi placeat ex maxime dolorem. Non natus
+                    beatae
+                    cum nobis officiis et magni reprehenderit. Ut quidem autem hic deleniti internos ut nisi omnis! Eum
+                    rerum voluptatum quo ratione voluptatibus quo dolore quae ea nihil tenetur sed deleniti repudiandae
+                    ut
+                    voluptatem porro.</li>
+                <li>Rem illo libero non vitae veritatis cum quasi quia vel animi placeat ex maxime dolorem. Non natus
+                    beatae
+                    cum nobis officiis et magni reprehenderit. Ut quidem autem hic deleniti internos ut nisi omnis! Eum
+                    rerum voluptatum quo ratione voluptatibus quo dolore quae ea nihil tenetur sed deleniti repudiandae
+                    ut
+                    voluptatem porro.</li>
+                <li>Rem illo libero non vitae veritatis cum quasi quia vel animi placeat ex maxime dolorem. Non natus
+                    beatae
+                    cum nobis officiis et magni reprehenderit. Ut quidem autem hic deleniti internos ut nisi omnis! Eum
+                    rerum voluptatum quo ratione voluptatibus quo dolore quae ea nihil tenetur sed deleniti repudiandae
+                    ut
+                    voluptatem porro.</li>
+                <li>Libero non vitae veritatis cum quasi quia vel animi placeat ex maxime dolorem. Non natus beatae
+                    cum nobis officiis et magni reprehenderit. Ut quidem autem hic deleniti internos ut nisi omnis! Eum
+                    rerum voluptatum quo ratione voluptatibus quo dolore quae ea nihil tenetur sed deleniti repudiandae
+                    ut
+                    voluptatem porro.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="End_letter_1">
+        <div class="left">
+            <span id="Featured_clients">Featured clients</span>
+            <p>In quasi fugiat qui adipisci internos ad quam officia sed tempore internos.</p>
+        </div>
+
+        <div class="End_doc1">
+            <div>
+                <img src="images/icons/crolla.svg" alt="" width="100px" height="100px" class="filterimage">
+                <p>Sample text. Click to select the Text.</p>
+                <a href="https://en.wikipedia.org/wiki/Anthony_Crolla" target="_blank">
+                <p class="butone_more">MORE</p>
+                </a>
+            </div>
+
+            <div>
+                <img src="images/icons/eva.jpg" alt="" width="100px" height="100px" class="filterimage">
+                <p>Sample text. Click to select the Text.</p>
+                <a href="https://eva.ua/ua/" target="_blank">
+                <p class="butone_more">MORE</p>
+                </a>
+            </div>
+
+            <div>
+                <img src="images/icons/teslla1.png" alt="" width="100px" height="100px" class="filterimage">
+                <p>Sample text. Click to select the Text.</p>
+                <a href="https://file.liga.net/companies/tesla" target="_blank">
+                <p class="butone_more">MORE</p>
+                </a>
+            </div>
+
+            <div>
+                <img src="images/icons/binance.png" alt="" width="100px" height="100px">
+                <p>Sample text. Click to select the Text.</p>
+                <a href="https://www.binance.com/ru-UA" target="_blank">
+                <p class="butone_more">MORE</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
