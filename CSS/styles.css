@@ -2,23 +2,23 @@ body {
   background-color: rgb(234, 232, 229)
 }
 
-.header ul {
+header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:white;
+  background-color:rgb(8, 8, 8);
 }
 
-.header li {
+header li {
   float: left;
   text-align: center;
 }
-.header li .pages {
+header li .pages {
   text-align: center;
 }
 
-.header li a {
+header li a {
   display: block;
   color: crimson;
   text-align: center;
@@ -26,16 +26,16 @@ body {
   text-decoration: none;
 }
 
-.header  li a:hover {
-  background-color: azure;
+header  li a:hover {
+  background-color: darkgray
 }
-.header li img{
+header li img{
   width: 25px;
 }
-.header ul .pages {
+header ul .pages {
   height: 35px;
 }
-.header span {
+header span {
   color: teal;
   font-size: xxx-large;
   text-align: left;
@@ -43,13 +43,13 @@ body {
   padding-left: 10px;
 }
 
-.conteiner1 {
 
-}
+
 
 .conteiner1 img {
   width:100%;
 }
+
 .topleft {
   position: absolute;
   top: 54%;
@@ -146,8 +146,8 @@ div .table-conteiner2 {
   text-shadow: 1px 1px 1px;
 }
 
-  
-<<<<<<< Updated upstream
+
+
 .section2-bottom1 img{
   height: 100px;
   margin-top: 20px;}
@@ -251,14 +251,14 @@ div .table-conteiner2 {
 }
 .section5-top p {
   text-shadow: 5px 4px 1px;
-  color: dimgrey;
-=======
+  color: dimgrey;}
+  
   li a:hover {
     background-color: white;
   }
 li img{
     width: 25px;
->>>>>>> Stashed changes
+
 }
 .company {
   display: flex;
