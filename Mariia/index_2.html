@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamwork</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+        }
+
+        h2 {
+            font-size: 48px;
+            color: white;
+        }
+
+        .section_1 {
+            padding-left: 48px;
+            padding-top: 40px;
+            width: auto;
+            height: 600px;
+        }
+
+        .section_2 {
+
+            height: 1000px;
+        }
+
+        .section_3 {
+            padding-left: 48px;
+            padding-top: 40px;
+            width: auto;
+            height: 800px;
+            background-image: url('./images/pexels-makjp-12258695.jpg');
+            background-size: 100% 100%;
+        }
+
+        .section_4 {
+
+            height: 800px;
+        }
+
+        header {
+            width: auto;
+            height: 80px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        .team_logo {
+            width: 60px;
+            padding-left: 48px;
+
+        }
+
+        .p_header {
+            color: white;
+            display: flex;
+
+            justify-content: space-around;
+            margin: 264px;
+
+
+
+        }
+
+        .p_header p {
+            flex: 1;
+            width: 50px;
+            margin: 20px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration-line: none;
+
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        .social_icon {
+            width: 16px;
+
+        }
+
+        .social_icon_container {
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+        }
+
+        .social_icon_container img {
+            flex: 1;
+            margin: 10px;
+        }
+
+        circle {
+            cx: 50;
+            cy: 50;
+            r: 40;
+            fill: #AC91CA;
+        }
+
+        .circle_3 {
+            fill: white;
+        }
+
+
+        .circle_1 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .circle_1 p {
+            position: absolute;
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            top: -4px;
+            left: 32px;
+        }
+
+        .p_1 {
+            color: white;
+            margin-top: 160px;
+        }
+
+        .p_2 {
+            color: white;
+            font-size: 72px;
+            font-weight: 700;
+            position: absolute;
+            top: 48px;
+            left: 124px;
+        }
+
+        .p_3 {
+            color: white;
+            position: absolute;
+            top: 208px;
+            left: 100px;
+        }
+
+        .p_4 {
+            color: white;
+        }
+
+        .circle_2 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .circle_2 img {
+            width: 400px;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .box_1 {
+            flex: 2;
+        }
+
+        .box_2 {
+            flex: 1;
+            margin-top: 168px;
+        }
+
+        .img_1 {
+            width: 60%;
+            margin-top: 200px;
+        }
+
+        .img_2 {
+            width: 12%;
+        }
+
+        object {
+            width: 48px;
+            height: 48px;
+
+
+
+        }
+
+        .circle_1 {
+            display: inline-block;
+            position: relative;
+        }
+
+        svg {
+            width: 100px;
+            height: 100px;
+        }
+
+        .object_1 {
+            position: absolute;
+            display: inline-block;
+            margin-top: 24px;
+            margin-left: -72px;
+        }
+
+        .object_2 {
+            position: absolute;
+            display: inline-block;
+            margin-top: -4px;
+            margin-left: -68px;
+        }
+
+        .object_2 p {
+            color: black;
+            font-size: 32px;
+            font-weight: 700;
+
+        }
+
+        .p_section_2 {
+            width: 300px;
+            margin-top: -16px;
+            color: white;
+
+        }
+
+        .p_section_3 {
+            width: 500px;
+            color: white;
+
+        }
+
+        .p_section_4 {
+            width: 400px;
+
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-top: 4px;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box_5 {
+            margin-left: 32px;
+
+        }
+
+        .container_2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box_3 {
+            margin-top: 80px;
+        }
+
+        .container_3 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 48px;
+        }
+
+        .container_4 {
+            display: flex;
+            flex-direction: column;
+            background-color: #AC91CA;
+            width: 88%;
+            height: 50%;
+        }
+
+        .container_5 {
+            margin-left: 32px;
+        }
+
+        .container_6 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+        }
+
+        ol {
+            list-style-type: decimal-leading-zero;
+            color: white;
+            line-height: 32px;
+
+            padding-top: 4px;
+        }
+
+        .ol_1 {
+            margin-left: 44px;
+            background-color: #AC91CA;
+            width: 30%;
+        }
+
+        .ol_2 {
+            margin-top: 32px;
+        }
+    </style>
+
+    <header>
+        <picture>
+            <a href="#">
+                <img class="team_logo" src="./images/icons&logo/TEAM.svg" alt="Team_logo">
+            </a>
+        </picture>
+        <div class="p_header">
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Page1/index.html">Page 1</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Page2/index.html">Page 2</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Page3/Letter_1.html">Page 3</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Page4/Letter_2.html">Page 4</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Yarmoluk/1.html">Page 5</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Yrmoluk. O/2.html">Page 6</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Mariia/index.html">Page 7</a></p>
+            <p><a href="https://nodnr.github.io/Hillel_teamwork.github.io/Mariia/index_2.html">Page 8</a></p>
+        </div>
+        <div class="social_icon_container">
+            <img class="social_icon" src="./images/icons&logo/facebook-f-brands.svg" alt="Facebook">
+            <img class="social_icon" src="./images/icons&logo/twitter-brands.svg" alt="Twitter">
+            <img class="social_icon" src="./images/icons&logo/instagram-brands.svg" alt="Twitter">
+        </div>
+
+    </header>
+    <section class="section_1 container">
+        <div class="box_1">
+            <div>
+                <h2>Infographics</h2>
+            </div>
+            <div class="circle_1">
+                <svg>
+                    <circle>
+                </svg>
+                <p>01</p>
+            </div>
+            <p class="p_1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>tempor
+                incididunt ut labore et
+                dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud <br>exercitation ullamco laboris
+                nisi ut
+                aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <div class="circle_2 box_2">
+            <img src="./images/circle2.svg" alt="circle">
+
+            <p class="p_2">88%</p>
+            <p class="p_3">Lorem ipsum dolor sit amet</p>
+        </div>
+    </section>
+    <section class="section_1 section_2">
+        <div>
+            <h2>We Are Increasing<br>Business Success<br>With IT Solution</h2>
+        </div>
+        <div>
+            <p class="p_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
+                dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu
+                fugiat nulla pariatur.</p>
+        </div>
+        <div class="container_2">
+            <picture>
+                <img class="img_1" src="./images/pexels-tarzine-jackson-773371.png" alt="pic_1">
+            </picture>
+            <div class="box_3">
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle>
+                            </svg>
+                        </div>
+                        <div class="object_1">
+                            <object type="image/svg+xml" data="./images/icons&logo/1.svg">
+
+                            </object>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+                        <h4>Visualize It</h4>
+                        <p class="p_section_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle>
+                            </svg>
+                        </div>
+                        <div class="object_1">
+                            <object type="image/svg+xml" data="./images/icons&logo/2.svg">
+
+                            </object>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+                        <h4>Create It</h4>
+                        <p class="p_section_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle>
+                            </svg>
+                        </div>
+                        <div class="object_1">
+                            <object type="image/svg+xml" data="./images/icons&logo/download.svg">
+
+                            </object>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+                        <h4>Crow It</h4>
+                        <p class="p_section_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_3">
+        <div>
+            <h2>IT Solution Strategy<br>Development For Your<br>Business</h2>
+        </div>
+        <div class="container_4">
+            <div class="container_3">
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle class="circle_3">
+                            </svg>
+                        </div>
+                        <div class="object_2">
+                            <p>01</p>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+
+                        <p class="p_section_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle class="circle_3">
+                            </svg>
+                        </div>
+                        <div class="object_2">
+                            <p>02</p>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+
+                        <p class="p_section_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container_3">
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle class="circle_3">
+                            </svg>
+                        </div>
+                        <div class="object_2">
+                            <p>03</p>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+
+                        <p class="p_section_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <div class="circle_1">
+                            <svg>
+                                <circle class="circle_3">
+                            </svg>
+                        </div>
+                        <div class="object_2">
+                            <p>04</p>
+
+                        </div>
+                    </div>
+                    <div class="box_4">
+
+                        <p class="p_section_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section_1 section_4">
+        <div class="container_6">
+            <div class="container">
+                <div>
+                    <img src="./images/Group 7.png" alt="pic_2">
+                </div>
+
+                <div class="box_5">
+                    <h4>Nino Scavo</h4>
+                    <p class="p_section_3 p_section_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                    <div class="social_icon_container">
+                        <img class="social_icon" src="./images/icons&logo/facebook-f-brands.svg" alt="Facebook">
+                        <img class="social_icon" src="./images/icons&logo/twitter-brands.svg" alt="Twitter">
+                        <img class="social_icon" src="./images/icons&logo/instagram-brands.svg" alt="Twitter">
+                    </div>
+
+                </div>
+            </div>
+            <div class="container container_5">
+                <div>
+                    <img src="./images/Group 8.png" alt="pic_3">
+                </div>
+
+                <div class="box_5">
+                    <h4>Lin Kim</h4>
+                    <p class="p_section_3 p_section_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                    <div class="social_icon_container">
+                        <img class="social_icon" src="./images/icons&logo/facebook-f-brands.svg" alt="Facebook">
+                        <img class="social_icon" src="./images/icons&logo/twitter-brands.svg" alt="Twitter">
+                        <img class="social_icon" src="./images/icons&logo/instagram-brands.svg" alt="Twitter">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container_6">
+            <div class="container">
+                <div>
+                    <img src="./images/Group 6.png" alt="pic_4">
+                </div>
+
+                <div class="box_5">
+                    <h4>Di Dowson</h4>
+                    <p class="p_section_3 p_section_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                    <div class="social_icon_container">
+                        <img class="social_icon" src="./images/icons&logo/facebook-f-brands.svg" alt="Facebook">
+                        <img class="social_icon" src="./images/icons&logo/twitter-brands.svg" alt="Twitter">
+                        <img class="social_icon" src="./images/icons&logo/instagram-brands.svg" alt="Twitter">
+                    </div>
+
+                </div>
+            </div>
+            <div class="container container_5">
+                <div>
+                    <img src="./images/Group 9.png" alt="pic_5">
+                </div>
+
+                <div class="box_5">
+                    <h4>Sof Brown</h4>
+                    <p class="p_section_3 p_section_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                    <div class="social_icon_container">
+                        <img class="social_icon" src="./images/icons&logo/facebook-f-brands.svg" alt="Facebook">
+                        <img class="social_icon" src="./images/icons&logo/twitter-brands.svg" alt="Twitter">
+                        <img class="social_icon" src="./images/icons&logo/instagram-brands.svg" alt="Twitter">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_1 section_4">
+        <picture>
+            <img class="img_2" src="./images/Group 10.png" alt="pic_6">
+        </picture>
+        <div>
+            <h2>Flexible Distance Learning</h2>
+        </div>
+        <div>
+            <p class="p_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et
+                dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu
+                fugiat nulla pariatur.</p>
+        </div>
+        <div class="container ol_2">
+            <div>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                </ol>
+            </div>
+            <div class="ol_1">
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</body>
