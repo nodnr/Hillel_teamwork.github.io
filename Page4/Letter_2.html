@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #info {
+            font-size: 5rem;
+            margin-left: 40px;
+        }
+
+        .box_1 {
+            color: aliceblue;
+        }
+
+        #info_dv {
+            height: 600px;
+        }
+
+        .dv_1 {
+            display: inline-block;
+            max-width: 600px;
+            height: 600px;
+        }
+
+        #text_1 {
+            position: relative;
+            left: 40px;
+            font-size: 4rem;
+            font-weight: bold;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 100%;
+            filter:grayscale(60%);
+        }
+
+        #text_2 {
+            position: relative;
+            top: 350px;
+            left: 40px;
+            width: auto;
+            font-size: 22px;
+        }
+
+        .dv_2 {
+            position: relative;
+            top: 25%;
+            right: 40px;
+            float: right;
+            text-align: center;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background-color: blueviolet;
+            filter:grayscale(60%);
+        }
+
+        .dv_2 div {
+            display: inline-block;
+            margin-top: 30%;
+            margin-bottom: auto;
+        }
+
+
+        #We_Are {
+            font-size: 5rem;
+            max-width: 40%;
+            height: 240px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+
+        #after_weare {
+            margin-left: 40px;
+            font-size: 22px;
+            opacity: 0.5;
+        }
+
+        .grid_1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 150px);
+            margin-top: 80px;
+        }
+
+        .niga {
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            text-align: center;
+        }
+
+        .phonebook {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .presentation {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .star {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        .aloe img {
+            margin-left: 40px;
+            width: 400px;; height: 400px;
+            filter: grayscale(100%);
+        }
+
+        .svg {
+            display: block;
+            height: 50px;
+            float: left;
+            border-radius: 100%;
+            background-color: blueviolet;
+            filter:grayscale(60%);
+        }
+
+        .txt_svg {
+            overflow: auto;
+            position: relative;
+            left: 30px;
+        }
+
+        .txt_svg p {
+            margin: 5px 0;
+        }
+
+        .transparency {
+            font-size: 22px;
+            opacity: 0.5;
+        }
+
+        .styletxt {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background-color: aliceblue;
+            font-size: 2rem;
+            font-weight: bold;
+            float: left;
+            position: relative;
+            top: 25px;
+        }
+
+        .rox_2 {
+            background-color: blueviolet;
+            margin: 0 40px;
+            height: 500px;
+            filter:grayscale(60%);
+        }
+
+        .rox_3,
+        .rox_3_1 {
+            display: flex;
+            flex: 1;
+        }
+
+        .rox_3_1 {
+            border-top: 1px solid rgb(70, 70, 70);
+        }
+
+        .rox_4 {
+            max-width: 700px;
+            max-height: 200px;
+            margin: 20px auto;
+        }
+
+        .tetx {
+            overflow: auto;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: justify;
+            padding-left: 40px;
+            color: aliceblue;
+        }
+
+        #fon {
+            height: 550px;
+            background-image: url(images/cb.jpg);
+        }
+
+        .gregor {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 350px 350px;
+            margin: 40px;
+            color: aliceblue;
+        }
+
+        .girl_1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            text-align: center;
+        }
+
+        .girl_2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            text-align: center;
+        }
+
+        .girl_3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            text-align: center;
+        }
+
+        .girl_4 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            text-align: center;
+        }
+
+        .girl_1 img,
+        .girl_2 img,
+        .girl_3 img,
+        .girl_4 img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+
+        .rtx_1 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .rtx_2 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .rtx_3 {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+
+        .rtx_4 {
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+        }
+
+        .head {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+
+        .hd {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .icons {
+            text-align: center;
+            filter:grayscale(60%);
+        }
+
+        .icons img {
+            width: 50px;
+        }
+
+        picture img {
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+            margin: 40px 40px 0px 40px;
+        }
+
+        .list_1 {
+            list-style-type:decimal-leading-zero;
+            font-size: 22px;
+            line-height: 40px;
+            width: 350px; height: auto;
+            list-style-position: inside;
+            padding: 30px;
+        }
+
+        .list_2 {
+            list-style-type:decimal-leading-zero;
+            font-size: 22px;
+            line-height: 40px;
+            background-color: blueviolet;
+            width: 350px; height: auto;
+            list-style-position: inside;
+            padding: 30px;
+            filter:grayscale(60%);
+        }
+
+        .boxlist {
+            display: flex;
+            margin: 0 40px;
+        }
+
+        #end_text {
+            font-size: 22px;
+            margin: 0 40px;
+        }
+
+        .twenty-two {
+            font-size: 22px;
+        }
+
+        .twenty-two_section {
+            color: aliceblue; border-bottom: 1px solid grey;
+        }
+
+        .font_5rem {
+            font-size: 5rem; font-weight:bold;  margin: 0 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        a:hover {
+            color:peru;
+        }
+
+    </style>
+
+    <section class="box_1">
+        <h1 id="info">Infographics</h1>
+        <div id="info_dv">
+            <div class="dv_1">
+                <p id="text_1">01</p>
+                <p id="text_2">Ut provident officiis sed sunt quia et dolore natus! Quo dolorem voluptatum hic saepe
+                    nihil et
+                    repudiandae tempore est mollitia accusantium aut sapiente beatae eum amet voluptatem.
+                </p>
+            </div>
+
+            <div class="dv_2">
+                <div>
+                    <span style="font-size: 8rem;">88%</span>
+                    <br>
+                    <span class="twenty-two">Lorem ipsum dolor sit amet.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="twenty-two_section">
+        <p id="We_Are">
+            We Are Increasing Business Success With IT Solution
+        </p>
+        <p id="after_weare">
+            Lorem ipsum dolor sit amet. A error deserunt non tempore recusandae et numquam voluptatum ut omnis
+            consequatur et illum iure? Ut inventore possimus in soluta nesciunt sit rerum voluptate est consequatur
+            sequi! Cum consequuntur ullam vel nostrum facere ex natus possimus et harum sint 33 quod sunt et optio
+            nulla. Ut nihil tempore ea deleniti reiciendis qui eligendi doloremque qui officia accusantium et assumenda
+            voluptatem. Est praesentium quasi a quod numquam ea rerum architecto et neque maiores ex fugit suscipit aut
+            recusandae suscipit. Quo quis quia sit molestias doloribus rem rerum architecto internos quis aut porro
+            totam eum aliquam maxime!
+        </p>
+
+        <div class="grid_1">
+            <div class="aloe">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="images/srset/berg.jpg">
+                    <source media="(min-width: 800px)" srcset="images/aloe.png">
+                <img src="images/aloe.png" alt="image change" title="image change">
+                </picture>
+            </div>
+
+            <div class="phonebook">
+                <img class="svg" src="images/icons/phonebook.svg" alt="">
+                <div class="txt_svg">
+                    <p class="styletxt">Visualize it</p>
+                    <p class="transparency">Est consequatur Quis sit vitae voluptate et rerum quia a blanditiis dolores.</p>
+                </div>
+            </div>
+
+            <div class="presentation">
+                <img class="svg" src="images/icons/presentation.svg" alt="">
+                <div class="txt_svg">
+                    <p class="styletxt">Create it</p>
+                    <p class="transparency">Est consequatur Quis sit vitae voluptate et rerum quia a blanditiis dolores.</p>
+                </div>
+            </div>
+
+            <div class="star">
+                <img class="svg" src="images/icons/star.svg" alt="">
+                <div class="txt_svg">
+                    <p class="styletxt">Grow it</p>
+                    <p class="transparency">Est consequatur Quis sit vitae voluptate et rerum quia a blanditiis dolores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p class="font_5rem">It Solution Strategy <br> Development For Uor
+            <br> Business
+        </p>
+
+        <div id="fon">
+            <div class="rox_2">
+                <div class="rox_3">
+                    <div class="rox_4">
+                        <p class="number">01</p>
+                        <p class="tetx">Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst dignissim
+                            efficitur
+                            phasellus, maximus posuere metus maecenas venenatis purus blandit non placerat cubilia.
+                            Laoreet in tellus sollicitudin mattis ex risus lectus maecenas, duis adipiscing libero
+                            aliquet donec sem blandit sociosqu purus, convallis ante eros augue tempor porttitor est.
+                        </p>
+                    </div>
+
+                    <div class="rox_4">
+                        <p class="number">02</p>
+                        <p class="tetx">Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst dignissim
+                            efficitur
+                            phasellus, maximus posuere metus maecenas venenatis purus blandit non placerat cubilia.
+                            Laoreet in tellus sollicitudin mattis ex risus lectus maecenas, duis adipiscing libero
+                            aliquet donec sem blandit sociosqu purus, convallis ante eros augue tempor porttitor est.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rox_3_1">
+                    <div class="rox_4">
+                        <p class="number">03</p>
+                        <p class="tetx">Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst dignissim
+                            efficitur
+                            phasellus, maximus posuere metus maecenas venenatis purus blandit non placerat cubilia.
+                            Laoreet in tellus sollicitudin mattis ex risus lectus maecenas, duis adipiscing libero
+                            aliquet donec sem blandit sociosqu purus, convallis ante eros augue tempor porttitor est.
+                    </div>
+
+                    <div class="rox_4">
+                        <p class="number">04</p>
+                        <p class="tetx">Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst dignissim
+                            efficitur
+                            phasellus, maximus posuere metus maecenas venenatis purus blandit non placerat cubilia.
+                            Laoreet in tellus sollicitudin mattis ex risus lectus maecenas, duis adipiscing libero
+                            aliquet donec sem blandit sociosqu purus, convallis ante eros augue tempor porttitor est.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="twenty-two_section">
+        <div class="gregor">
+            <div class="girl_1">
+                <img src="images/girl_1.jpg" alt="">
+            </div>
+
+            <div class="girl_2">
+                <img src="images/girl_2.jpg" alt="">
+            </div>
+
+            <div class="girl_3">
+                <img src="images/girl_3.jpg" alt="">
+            </div>
+
+            <div class="girl_4">
+                <img src="images/girl_4.jpeg" alt="">
+            </div>
+
+            <div class="rtx_1">
+                <a href="https://desperatehousewives.fandom.com/wiki/Nina_Fletcher" target="_blank">
+                <p class="head">Nina Scavo</p>
+            </a>
+ 
+                <p class="hd">Risus habitasse sagittis dis imperdiet magnis non purus, gravida curabitur libero tortor
+                    tempor
+                    accumsan duis, viverra eleifend vestibulum euismod at laoreet. Pulvinar eleifend dui penatibus
+                    elementum sem massa ornare habitasse.
+                </p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" title="перейти за посиланням" target="_blank">
+                    <img src="images/fti/facebook.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/" title="перейти на сторінку" target="_blank">
+                    <img src="images/fti/instagram_on.jpg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=uk" title="twitter" target="_blank">
+                        <img src="images/fti/twitter.png" alt="">
+                                </a>
+                </div>
+            </div>
+
+            <div class="rtx_2">
+                <p class="head">Unda Klm</p>
+                <p class="hd">Risus habitasse sagittis dis imperdiet magnis non purus, gravida curabitur libero tortor
+                    tempor
+                    accumsan duis, viverra eleifend vestibulum euismod at laoreet. Pulvinar eleifend dui penatibus
+                    elementum sem massa ornare habitasse.
+                </p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" title="перейти за посиланням" target="_blank">
+                        <img src="images/fti/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/" title="перейти на сторінку" target="_blank">
+                            <img src="images/fti/instagram_on.jpg" alt="">
+                            </a>
+                            <a href="https://twitter.com/?lang=uk" title="twitter" target="_blank">
+                                <img src="images/fti/twitter.png" alt="">
+                                        </a>
+                </div>
+            </div>
+
+            <div class="rtx_3">
+                <a href="https://www.instagram.com/di_dawson1/" target="_blank">
+                <p class="head">Di Dowson</p>
+                </a>
+                <p class="hd">Risus habitasse sagittis dis imperdiet magnis non purus, gravida curabitur libero tortor
+                    tempor
+                    accumsan duis, viverra eleifend vestibulum euismod at laoreet. Pulvinar eleifend dui penatibus
+                    elementum sem massa ornare habitasse.
+                </p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" title="перейти за посиланням" target="_blank">
+                        <img src="images/fti/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/" title="перейти на сторінку" target="_blank">
+                            <img src="images/fti/instagram_on.jpg" alt="">
+                            </a>
+                            <a href="https://twitter.com/?lang=uk" title="twitter" target="_blank">
+                    <img src="images/fti/twitter.png" alt="">
+                            </a>
+                </div>
+            </div>
+
+            <div class="rtx_4">
+                <p class="head">Sofa Brown</p>
+                <p class="hd">Risus habitasse sagittis dis imperdiet magnis non purus, gravida curabitur libero tortor
+                    tempor
+                    accumsan duis, viverra eleifend vestibulum euismod at laoreet. Pulvinar eleifend dui penatibus
+                    elementum sem massa ornare habitasse.
+                </p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" title="перейти за посиланням" target="_blank">
+                        <img src="images/fti/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/" title="перейти на сторінку" target="_blank">
+                            <img src="images/fti/instagram_on.jpg" alt="">
+                            </a>
+                            <a href="https://twitter.com/?lang=uk" title="twitter" target="_blank">
+                                <img src="images/fti/twitter.png" alt="">
+                                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="twenty-two_section">
+        <picture>
+            <img src="images/parrot.jpg" alt="">
+        </picture>
+
+        <a href="" target="_top" title="Перейти на початок сторінки">
+        <p class="font_5rem">
+            Flexible Distance Learning
+        </p>
+        </a>
+
+        <p id="end_text">
+            itora lacinia ultricies potenti facilisis inceptos viverra ridiculus, justo tempus mattis convallis in
+            suspendisse lectus egestas. Vulputate orci sodales adipiscing sapien lorem consectetur commodo, posuere
+            lobortis scelerisque conubia nullam torquent, mi nam urna habitasse quam euismod. Etiam porttitor aliquet
+            risus curabitur lobortis mi montes rutrum litora molestie convallis volutpat, proin habitasse imperdiet cras
+            auctor adipiscing inceptos consectetur metus fringilla finibus.
+        </p>
+
+        <div class="boxlist">
+                <ol class="list_1">
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                </ol>
+            
+                <ol class="list_2" start="7">
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                    <li>Dapibus senectus laoreet tempor</li>
+                </ol>
+        </div>
+    </section>
+
+</body>
+
+</html>
